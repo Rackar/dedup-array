@@ -1,4 +1,4 @@
-let unique = require("./index");
+let dedup = require("./index");
 let array = [
     {
         id: 1,
@@ -26,5 +26,5 @@ let array = [
     },
 ]
 console.log("input", array)
-console.log('key=["id"]\n', unique(array, ['id']))
-console.log('key=["prop","description"\n', unique(array, ['prop', 'description']))
+console.log('key=["id"]\n', dedup(array,['id']))
+console.log('key=["prop","description"\n', dedup(array, ['prop', 'description']))
